@@ -9,6 +9,8 @@ const CreateTodo = new createTodoController()
 const DeleteTodo = new deleteTodoController()
 const GetTodos = new getTodosController()
 
+router.get("/" ,(req, res)=>res.send("Hello world"))
+
 router.post('/create', CreateTodo.handle)
 router.delete('/delete', DeleteTodo.handle)
 router.get('/todos', GetTodos.handle)
